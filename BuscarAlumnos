@@ -1,0 +1,16 @@
+static  bool buscarAlumno(params string[] alumno)
+        {
+            int cont = 0;
+            string dni = Console.ReadLine();
+            for (int i = 0; i < alumno.Length; i++)
+            {
+                if(dni == alumno[i]){
+                    cont++;
+                }
+            }
+            if (cont == 1)
+                return true ;
+            else
+                return false;
+         
+     
